@@ -1,0 +1,62 @@
+body {
+    background-color: rgba(229, 215, 252, 0.836);
+}
+
+.conteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #000000;
+}
+
+.login-container{
+    width: 500px;
+    height: 500px;
+    background-color: rgb(178, 138, 253);
+    border-radius: 20%;
+}
+
+.login-form{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    height: 100%;
+}
+
+.digiteaq{
+    border-radius: 10%;
+    border-width: 10px;
+    border-color: #984afd;
+}
+
+.botao{
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    position: relative;
+    height: 12%;
+    width: 23%;
+    border-radius: 10%;
+    border-width: 2px;
+    background-color:#8d36ff;
+    border: 2px solid rgb(197, 153, 255);
+    transition: font-size 0.3s ease, border-color 0.2s ease, background-color 0.4s ease;
+}
+
+.botao:hover{
+    font-weight: 500;
+    font-size: 15.5px;
+    position: relative;
+    background-color:#984afd;
+    border: 2px solid rgb(222, 186, 255);
+    transition: font-size 0.3s ease, border-color 0.2s ease, background-color 0.4s ease;
+}
+
+.texto{
+    font-weight: bolder;
+    color: #5b00b1;
+    -webkit-text-stroke: 1px rgb(229, 215, 255);
+}

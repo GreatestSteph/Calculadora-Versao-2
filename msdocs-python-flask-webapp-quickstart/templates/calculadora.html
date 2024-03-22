@@ -1,0 +1,46 @@
+<!doctype html>
+<head>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='calculadora.css') }}">
+    <title>Calculadora</title>
+</head>
+<html>
+   <body>
+    <div class="conteudo">
+        <div class="login-container">
+            <form class="login-form" method="post" action="{{url_for('hello')}}">
+                <h1>Calculadora</h1>            
+                <h3>Selecione uma conta!</h3>
+                <br>
+                <div>
+                  <label>
+                    <select class="digiteaq" name="operacao" id="operacao">
+                      <option  value="+">Soma</option>
+                      <option  value="-">Subtração</option>
+                      <option  value="*">Multiplicação</option>
+                      <option  value="/">Divisão</option>
+                      <option  value="//">Divisão inteira</option>
+                      <option  value="**">Potenciação</option>
+                      <option  value="***">Raciciação</option>
+                    </select>
+                  </label>
+                </div>
+
+                <br>
+                <div>
+                  <input type="text" class="digiteaq" id="valor-b" name="valor-a" style="max-width: 256px;">
+                </div>
+                <br>
+                <div>
+                  <input type="text" class="digiteaq" id="valor-a" name="valor-b" style="max-width: 256px;">
+                </div>
+                <br>
+                <button type="submit" class="botao" id="botao">Calcular</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
